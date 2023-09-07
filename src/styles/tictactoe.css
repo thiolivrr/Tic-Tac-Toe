@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    height: 98vh;
+    width: 98vw;  
+    background-color:  var(--bg-color);
+    font-family: 'century gothic';
+    font-size: 100px;
+    color: var(--font_border);
+}
+
+h1 {
+    display: block;  
+    justify-content: flex-start;
+    font-size: 30px;   
+}
+
+:root {
+    --bg-color: #141414; 
+    --font_border: #F3E9DC;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    margin-top: 10px;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--font_border);
+    height: 150px;
+    width: 150px;
+    color: #6987C9;
+}
+
+#nick {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#choosing {
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 30px;
+}
+
+#choosing input {
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 0px;
+}
+
+#choosing button {
+    margin: auto;
+    width: 70px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    font-family: 'century gothic';
+    border: 0px;
+}
+
+#reset {
+    margin: auto;
+    width: 70px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    font-family: 'century gothic';
+    border: 0px;
+}
+
+@media screen and (max-width: 590px) {
+    .square {
+        height: 100px;
+        width: 100px;
+    }
+}
